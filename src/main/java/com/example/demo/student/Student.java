@@ -4,12 +4,17 @@ import java.time.LocalDate;
 
 public class Student {
 
+
+    //region Variables
     private Long id;
     private String name;
     private String email;
     private LocalDate dob;
     private Integer age;
 
+    //endregion
+
+    //region Constructors
     public Student() {
 
     }
@@ -29,6 +34,9 @@ public class Student {
         this.age = age;
     }
 
+    //endregion
+
+    //region Getters and Setters
     public Long getId() {
         return id;
     }
@@ -69,4 +77,22 @@ public class Student {
     public void setAge(Integer age) {
         this.age = age;
     }
+
+    //endregion
+
+
+    //region Methods
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", dob=" + dob +
+                ", age=" + age +
+                '}';
+    }
+
+    //endregion
 }
